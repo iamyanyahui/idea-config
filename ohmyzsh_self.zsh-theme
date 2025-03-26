@@ -2,7 +2,7 @@
 return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 host_color="%(!.%{$fg[red]%}.%{$fg[green]%})"
 
-PROMPT="${host_color}%m%{$reset_color%} %2~ \$(git_prompt_info)\$(git_remote_status)%{$reset_color%}%B»%b "
+PROMPT="${host_color}%n@%m%{$reset_color%} $PWD \$(git_prompt_info)\$(git_remote_status)%{$reset_color%}%B»%b "
 RPS1="${return_code}"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}("
